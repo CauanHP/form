@@ -5,8 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Teste</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;;
+        }
+
+        main {
+            margin: auto;
+            text-align: center;
+            max-width: 800px;
+            background-color: rgb(87, 87, 87);
+        }
+
+        .askoll {
+            margin: 18px;
+        }
+
+        .espaco {
+            padding-bottom: 8px;
+        }
+        .espaco > input {
+            text-align: center;
+            width: 300px;
+            color: rgb(108, 248, 108);
+            background-color: rgb(104, 104, 104);
+            top: 20px;
+            left: 20px;
+        }
+
+        #peguei {
+            position: relative;
+            top: 0px;
+            left: 304px;
+            transform: translate(-282px, 0px);
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <h1>Testando meu formulário</h1>
+        <form class="askoll" action="cadastro.php" method="post">
+            <p class="espaco">
+            <label for="inome">User:</label>
+            <input width="300" type="text" name="nome" required maxlength="20" minlength="5" id="inome" placeholder="Digite seu nome de usuário!"></p>
+            <p class="espaco">
+            <label for="ipass">Pass:</label>
+            <input type="password" name="senha" id="ipass" required minlength="5" placeholder="Digite sua senha">
+            </p>
+            <p class="espaco" id="peguei">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </main>
 </body>
 </html>
