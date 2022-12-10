@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xxxxx</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            padding-top: 10px;
+            background-color: rgba(77, 77, 77, 0.925);
+            color: white;
+        }
+
+        article {
+            margin: auto;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.39);
+            padding: 5px;
+            width: 300px;
+            height: 350px;
+        }
+
+        article > h1 {
+            display: flex;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.322);
+            color: yellow;
+            width: 304px;
+            text-indent: 97px;
+        }
+
+        #soloq {
+            margin-bottom: 10px;
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Formulário</h1>
+        <fieldset  id="soloq"> <legend>Envie seus <strong>arquivos</strong> abaixo:</legend>
+            <form action="cadastro.php" method="post">
+                <div>
+                    <label for="iArquivo"> <strong>Upload</strong>: </label>
+                    <input type="file" name="Arquivo" id="iArquivo">
+                </div>
+            </form>
+        </fieldset>
+        
+        <form action="cadastro.php" method="get">
+            <div>
+                <h2>Escolha sua cor:</h2>
+                <label for="icolor"><strong>RGB</strong></label>
+                <input type="color" name="cor" id="icolor">
+            </div>
+            <form action="cadastro.php" method="get">
+                <div>
+                    <h3>Nível de Satisfação</h3>
+                    <label for="isati">Nível</label>
+                    <input type="range" name="Satisfacao" id="isati" min="1" max="5" value="1">
+                </div>
+            </form>
+
+            <form action="cadastro.php">
+                <input type="submit" value="Enviar">
+            </form>
+
+        </form>
+    </article>
+</body>
+</html>

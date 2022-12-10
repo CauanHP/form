@@ -9,10 +9,17 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <fieldset>
-        <legend>Esportes Favoritos</legend>
-        <input type="checkbox" name="esfut" id="iesfut"> Futebol
+        <legend>Sexo</legend>
+        <input type="radio" name="all" id="imas" checked>   <label for="imas">Masculino</label><br>
+        <input type="radio" name="all" id="ifem">   <label for="ifem">Feminino</label><br>
     </fieldset>
-
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut" checked > <!--Divisoria--> <label for="iesfut">Futebol</label><br>
+        <input type="checkbox" name="esbas" id="iesbas"> <!--Divisoria--> <label for="iesbas">Basquete</label><br>
+        <input type="checkbox" name="esnat" id="iesnat"> <!--Divisoria--> <label for="iesnat">Natação</label><br>
+        <input type="checkbox" name="escor" id="iescor" checked> <!--Divisoria--> <label for="iescor">Corrida</label><ebr>
+    </fieldset>
     <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
