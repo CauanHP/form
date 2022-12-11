@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="separete">
-        <label for="ianime">Animes Favoritos</label>
+        <label for="ianime">Selecione seu anime favorito</label>
         <select name="animes" id="ianime">
             <optgroup label="~~Maratonar~~">
                 <option value="TG">Tokyo Ghoul</option>
@@ -29,26 +29,26 @@
             <optgroup label="~~Apreciar~~">
                 <option value="OP">One Piece</option>
                 <option value="EL">Elfen Lied</option>
-                <option value="RE">Re:Zero</option>
+                <option value="RE" selected>Re:Zero</option>
                 <option value="N">Naruto</option>
             </optgroup>
-            </select>
+        </select>
     </div>
 
         <div class="separete">
-            <label for="ifavo">Digite seu aniem favorito:</label>
+            <label for="ifavo">Digite um anime favorito:</label>
             <input type="text" name="favoritos" id="ifav" list="opts">
             <datalist id="opts">
                 <option>Tokyo Ghoul</option>
                 <option>Naruto</option>
-                <option>Sua mãe</option>
+                <option>Sword Art Online</option>
                 <option>Re:Zero</option>
                 <option>Boku No Hero</option>
             </datalist>
         </div>
 
-        <label for="mensagem">Mensagem</label>
-        
+        <label for="mensagem">Mensagem</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem..."></textarea>
         
 </body>
 </html>
