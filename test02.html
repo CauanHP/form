@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .separete {
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="separete">
+        <label for="ianime">Animes Favoritos</label>
+        <select name="animes" id="ianime">
+            <optgroup label="~~Maratonar~~">
+                <option value="TG">Tokyo Ghoul</option>
+                <option value="TR">Tokyo Revengers</option>
+                <option value="OPM">One Punch Man</option>
+                <option value="BNH">Boku No Hero</option>
+            </optgroup>
+            <optgroup label="~~Apreciar~~">
+                <option value="OP">One Piece</option>
+                <option value="EL">Elfen Lied</option>
+                <option value="RE">Re:Zero</option>
+                <option value="N">Naruto</option>
+            </optgroup>
+            </select>
+    </div>
+
+        <div class="separete">
+            <label for="ifavo">Digite seu aniem favorito:</label>
+            <input type="text" name="favoritos" id="ifav" list="opts">
+            <datalist id="opts">
+                <option>Tokyo Ghoul</option>
+                <option>Naruto</option>
+                <option>Sua mãe</option>
+                <option>Re:Zero</option>
+                <option>Boku No Hero</option>
+            </datalist>
+        </div>
+
+        <label for="mensagem">Mensagem</label>
+        
+</body>
+</html>
